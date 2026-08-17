@@ -1,0 +1,121 @@
+*{
+    margin: o;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh; /* Ensure the body takes up the full height */
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-img {
+    width: 170px;
+    height: 72px;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(banner.jpg); */
+    background-position: center;
+    background-size: cover;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload_container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* width: 380px;
+    height: 480px;
+    position: relative; */
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+/* .upload_form{
+    display: flex;
+    justify-content: center;
+    position: relative;
+} */
+
+#upload-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-column {
+    flex: 1;
+    min-width: 300px;
+}
+.input-field, .img-upload {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.img-upload {
+    padding: 5px;
+}
+.submit-btn {
+    width: 100%;
+}
+
+.input-group{
+    /* display: inline-block; */
+    top: 180px;
+    /* position: absolute; */
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100px;
+    height: 40px;
+    padding: 10px 0;
+    padding-left: 5px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+}
+
+.img-upload{
+    margin: 5px 0;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    background-color: rgba(63, 114, 76, 0.8);
+    /* background: linear-gradient(to right, #ff105f,#ffad06); */
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
